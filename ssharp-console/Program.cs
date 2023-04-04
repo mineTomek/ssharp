@@ -10,5 +10,8 @@ internal class Program
         string code = Console.ReadLine()!;
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine(Interpreter.Run(code));
+        if (code.Length > 0) {
+            Main(args);
+        }
     }
 }
